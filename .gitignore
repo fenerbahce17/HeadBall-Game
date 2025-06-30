@@ -1,0 +1,41 @@
+# Unity için
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+UserSettings/
+
+# Paket önbelleği (sorunlu dosyalar)
+Library/PackageCache/
+
+# IDE dosyaları
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+.vscode/
+.idea/
+
+# Unity tarafından otomatik oluşturulanlar
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.bak
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Geçici dosyalar
+*.swp
+*.lock
