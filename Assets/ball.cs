@@ -55,13 +55,13 @@ public class ball : MonoBehaviour
 void OnTriggerExit2D(Collider2D collider){
 
  
- if(collider.gameObject.CompareTag("player")){
+ if(collider.gameObject.CompareTag("Messisut")){
   playerr=player.GetComponent<player>();
 
 playerr.canShoot=false;
 
  }
-if(collider.gameObject.CompareTag("player1")){
+if(collider.gameObject.CompareTag("Estetiksut")){
 pl1=player1.GetComponent<player1>();
   pl1.canShoot=false;
 }
@@ -131,30 +131,16 @@ void OnCollisionEnter2D(Collision2D collision)
 double y=0.46;
 double xx=-3.24;
 void OnTriggerEnter2D(Collider2D collider2D){
-
-  if(collider2D.gameObject.CompareTag("player")){
+    Debug.Log("Tetikleyen: " + collider2D.name);
     
-       playerr=player.GetComponent<player>();
-      playerr.canShoot=true;
-        
-
- }
- if(collider2D.gameObject.CompareTag("player1")){
-    
-       pl1=player1.GetComponent<player1>();
-      pl1.canShoot=true;
-        
-
- }
-
-
-
-
- 
-
-    
-
+    if(collider2D.CompareTag("Messisut")){
+        player.GetComponent<player>().canShoot = true;
+    }
+    if(collider2D.CompareTag("Estetiksut")){
+        player1.GetComponent<player1>().canShoot = true;
+    }
 }
+
 
 
 

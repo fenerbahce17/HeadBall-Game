@@ -8,6 +8,8 @@ TagManager:
   - ball
   - player
   - player1
+  - Messisut
+  - Estetiksut
   layers:
   - Default
   - TransparentFX
